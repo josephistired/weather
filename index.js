@@ -83,8 +83,8 @@ module.exports = (function() {
               timezone: resultJSON.weatherdata.weather[i]['A$']['timezone'],
               alert: resultJSON.weatherdata.weather[i]['A$']['alert'],
               degreetype: resultJSON.weatherdata.weather[i]['A$']['degreetype'],
-              imagerelativeurl: resultJSON.weatherdata.weather[i]['A$']['imagerelativeurl']
-              //url: resultJSON.weatherdata.weather[i]['A$']['url'],
+              imagerelativeurl: resultJSON.weatherdata.weather[i]['A$']['imagerelativeurl'],
+              url: resultJSON.weatherdata.weather[i]['A$']['url'],
               //code: resultJSON.weatherdata.weather[i]['A$']['weatherlocationcode'],
               //entityid: resultJSON.weatherdata.weather[i]['A$']['entityid'],
               //encodedlocationname: resultJSON.weatherdata.weather[i]['A$']['encodedlocationname']
