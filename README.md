@@ -1,6 +1,6 @@
 # Weather
 
-[![NPM][npm-image]][npm-url] 
+[![NPM][npm-image]][npm-url]
 
 Weather is a module for obtaining weather information.
 
@@ -13,18 +13,22 @@ npm install weather-js
 ## Usage
 
 ```javascript
-var weather = require('weather-js');
+const weather = require("@josephistired/weather-js");
 
 // Options:
 // search:     location name or zipcode
 // degreeType: F or C
 
-weather.find({search: 'San Francisco, CA', degreeType: 'F'}, function(err, result) {
-  if(err) console.log(err);
+weather.find(
+  { search: "San Francisco, CA", degreeType: "F" },
+  function (err, result) {
+    if (err) console.log(err);
 
-  console.log(JSON.stringify(result, null, 2));
-});
+    console.log(JSON.stringify(result, null, 2));
+  }
+);
 ```
+
 ```bash
 [
   {
@@ -119,4 +123,3 @@ For the full copyright and license information, please view the LICENSE.txt file
 
 [npm-url]: https://www.npmjs.com/package/@josephistired/weather-js
 [npm-image]: https://badge.fury.io/js/weather-js.svg
-
